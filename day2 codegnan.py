@@ -1,0 +1,90 @@
+'''
+                                                                                    DAY 2
+
+Operators
+_________
+1. Arithemetic operators: which are used for mathematical questions.
+    +,-,*,/,**,//,%)
+    
+    eg:
+    a=5
+    b=9
+    print(a+b)
+    print(a-b)
+    print(a*b)
+    print(a/b)
+    print(a**b)
+    print(a//b)
+    print(a%b)
+
+2. Assignment operators: 
+    =,+=,-=,*=,%=
+    
+    eg:
+    
+    a=20
+    a+=4
+    a-=4
+    a*=4
+    a%=4
+    print(a)
+
+3.Comparision operator:
+   ==,!=,,<=,>=
+   
+   eg:
+   
+   a=20
+   b=5
+   print(a==b)
+   print(a!=b)
+   print(a<=b)
+   print(a>=b)
+
+4.Logical operator:
+   and,or,not,
+   
+   and-->returns true if both are true.
+   or--> returns true if any one is true.
+   not-->reverse the output.
+
+   eg:
+   a=20
+   b=7
+   c=80
+   print(a>=b and b<=c)
+   print(a<=b or b<=c)
+   print(not(a>=b and b<=c)
+
+5.Identity operator:
+   is,is not.
+   is--> checks same object or not.
+   is not--> checks whether it is not the same object.
+    eg:
+    a=20
+    b=20
+    print(a==b)
+    print(a is b)
+    print(a is not b)
+
+6.Membership operator:
+    in,not in
+
+    eg:
+    
+     a=[1,2,3,4,5]
+     print(2 in a)
+     print(2 not in a)
+     
+7.Bitwise operator:
+   &,<<,>>,|,^
+    eg:
+    print(5&3)
+    print(5|3)
+'''
+    
+  
+
+   
+   
+   
