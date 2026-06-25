@@ -1,0 +1,126 @@
+'''
+                                                                                   DAY 3
+                                                                                   ___ _
+Datatypes
+_________
+
+int
+float
+
+num_2=7.835
+num=80.90
+print(num//9)
+
+
+ Strings
+ _______
+
+--> srting is sequence of char that are enclosed in ' '," ",''' '''.
+--> str is immutable
+ Concatenation
+ _____________
+
+--> here , the (+) operator act as a concatenate more than 2 strings...
+ eg:
+ so="python"
+ any=" is a language"
+ print(so+any)
+
+ Indexing
+ ________
+
+ -->this is used to access the particular char in the string by pass index position value...
+
+ --> index start from 0 to so on..., where it starts with -1 to so on... from reverse order.
+
+ so=" python is a language"
+ print(so[-3])
+ print(so[5])
+
+ Methods
+ _______
+
+ 1.replace()
+ --> this method is used to replace to change any sub string in that particular string.
+
+ syntax: variable_name.replace("old string","new string",count)
+ 
+  eg:
+ so="pyhton is a language"
+ print(so.replace("pyhton ", java))
+
+ eg:
+ so="pyhton is a language"
+ print(so.replace("a","A",2))
+ 
+ 2.join()
+ _______
+ 
+ --> this method used to add new substring after each character int he string.
+
+ syntax: "string".join(var_name)
+
+ eg:
+ so="pyhton is a language"
+ print("-".join(so))
+ 
+ 3.split()
+ _______
+ 
+ --> this method can devide the string into different index into list , based on the string pass by us.
+ syntax--> var_name.split("substring)
+ eg: 
+  so="pyhton is a language"
+  print(so.split("is"))
+ 
+ 4.count()
+ ________
+
+ --> used to count the substring in the particular string and also specify the index position.
+
+ syntax: var_name.count("substring",starting index position ,ending index)
+ eg:
+ so="pyhton is a language"
+ print(so.count("a",0,12))
+
+ String built in functions
+ ______ _____ __ _________
+
+ 1.len():
+ --> this will find the lenth of the string , which is number char present in the that string.
+
+ eg:
+  so="pyhton is a language"
+  print(len(so))
+  
+ 2.max():
+ --> will get the max character in the string.
+ eg:
+ 
+ 3.min():
+ --> will get the min character in the string.
+ '''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+                                                                                   
