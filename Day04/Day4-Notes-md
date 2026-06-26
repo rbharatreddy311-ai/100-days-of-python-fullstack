@@ -1,0 +1,91 @@
+'''
+                                                                                    Day 4
+                                                                                    ___ _
+List Datatypes
+____ _________
+
+--> list is a collection of diffrent datatyopes that are enclodes in []
+eg:
+all_type=[1,"python",[1,2]]
+for i in all_type:
+    print(i)
+
+--> list is mutable
+                                                
+
+          Mutable                                             Immutable
+                                       
+        the datatype can be modified                         cannot be modified
+        eg:                                                    eg:
+                                                                so="python is a language"
+        any=[1,2,3,4]                                           print(s.replace("python","java"))
+          print(any)                                             print(so)
+        any.append(5)
+        print(any)
+        any.append(6)
+        print(any)                                                       
+
+Indexing in list
+
+eg:
+
+any=[1,2,"python is a language",[45,78,"java is a language",[1,23],90],"hello"]
+print(any[3])
+print(any[3][2])
+print(any[3][2][1])
+
+                                           
+--> List methods
+ 1. append()
+ eg:
+ any=[1,2,3,4]
+ any.append(5)
+
+ 2.extend()
+ --> this is also add a item in the last index position , but it will give
+     each value in the each index position.
+     
+   eg:
+    any=[1,2,3,4]
+    any.extend([5,6])
+    print(any)
+
+ 3.pop()
+ --> used to del the value from the list based on the index position .
+  sybtax: var_name.pop(index position)
+ eg:
+ any=[1,2,3,4]
+ any.pop(1)
+ print(any)
+
+ 4.remove()
+-->  used to del the item from the list , but it will del direct value from the list.
+  syntax: var_name.remove(value)
+ eg:
+ any=[1,2,3,4,60,50,30]
+ any.remove(60)
+ print(any)
+
+ Tuple
+ _____
+
+ --> tuple is a collection of diffrent data types , representing with () and seperated by ','.
+ --> it is immutable.
+ Methods
+ 1.index()
+ eg:
+ how=(1,2,3,4,"python",[4,5],(90,78))
+ print(how.index['python'])
+ 
+ 2.count()
+
+ eg:
+ how=(1,2,3,4,"python",[4,5],(90,78))
+ print(how[4])
+ print(how.count("python"))
+ '''
+ 
+ 
+ 
+ 
+ 
