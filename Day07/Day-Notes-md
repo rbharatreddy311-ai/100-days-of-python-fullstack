@@ -1,0 +1,69 @@
+'''
+                                                                                   Day 7
+                                                                                   ___ _
+
+Input formatting from user
+_____ __________ ____ ____
+
+input()
+______
+
+--> the input() function is used to take input from the user.
+
+1. int():
+
+  eg:
+   a=int(input("enter a number"))
+   b=int(input("enter a number:"))
+   print(a+b)
+
+2. string():
+
+   eg:
+    how=input("enter a character")
+    print(how+"bharat")
+
+3. float() :
+
+   eg:
+    a=float(input("enter your salary:"))
+    print(a "is the monthly salary")
+    
+4. list() :
+
+   eg:
+    group0=list(map(int,input().split()))
+    print(group)
+
+    group1=tuple(input().split()))
+    print(group)
+
+
+5. tuple() :
+   eg:
+    some=tuple(map(int,input().split()))
+    print(some)
+
+    group=tuple(input().split()))
+    print(group)
+
+     eval :
+    eg:
+     num=eval(input("enter:"))
+     print(type(num))
+
+    eg:
+     name=input("enter your name:")
+     age=int(input("enter your age:"))
+     print(name,"your age is",age)
+     print(f"{name} your age is {age}")
+
+     print("my name is %s and my age is %d "%(name,age))
+     '''
+
+
+
+
+
+
+    
