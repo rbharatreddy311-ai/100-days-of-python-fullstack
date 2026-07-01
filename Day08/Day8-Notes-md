@@ -1,0 +1,89 @@
+'''
+                                                                                    Day 8
+                                                                                    ___ _
+
+Statements
+__________
+
+
+1. Conditional statements
+
+ if:
+ --> used to check the condition is true or not
+ 
+  if eg:
+      num=9
+      if num%2==0:
+          print(f"{num} is a even number")
+    
+ 
+ if-else:
+ 
+ --> else is the fall back statement incase the if condition is false it executes else block.
+ 
+ if else eg:
+         num=9
+      if num%2==0:
+          print(f"{num} is a even number")
+      else :
+          print(f"{num} is odd number")
+ 
+ icic_details={"atm pin":"6600"}
+ pin=(" enter your 4 digit atm pin:")
+ if pin in icic_details['atm pin]:     print("welcome to atm")
+ else:
+ print("you have entered incorrect pin")
+
+
+ nested if:
+ 
+ --> if inside the another if is called nested if.
+ eg:
+ 
+icic_details={"atm pin":"6600"}
+pin=input(" enter your 4 digit atm pin:")
+if len(pin)==4:
+    if pin in icic_details['atm pin']:
+     print("welcome to atm")
+    else:
+        print("you have entered incorrect pin")
+else:
+    print("please enter only 4 digit number")
+
+
+ elif:
+
+ eg:
+  marks=int(inpout())
+  if marks>=90:
+     print("A+")
+  elif marks>=80:
+       print("A")
+  elif marks>=70:
+       print("B+")
+  else:
+       print("fail")
+       
+
+'''
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
