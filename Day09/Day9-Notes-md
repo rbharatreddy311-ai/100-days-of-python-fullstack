@@ -1,0 +1,106 @@
+'''                                                                                 Day 9
+                                                                                    ___ _
+
+Loops
+_____
+
+1. For loop :
+--> a for loop is used to iterate over a sequence,list,tuple,dictionaries.
+
+eg :
+ any="python is a language"
+ for j in any:
+     print(j)
+
+any_={"name":"bharat","role":"trainee"}
+for key in any_.keys():
+    print(key)
+
+2. while:
+--> the while loop will execute until the condition becomes true.
+eg :i=1
+  while i <5:
+      pritn(i)
+ 
+ eg:
+  i=1
+  while i <5:
+      pritn(i)
+      i+=1
+
+else in for loop :
+____ __ ___ ____
+
+--> the else block will be executed after the for loop , but incase the loop is breaked
+then
+
+any_3=[1,2,3,4,5]
+for i in any_3:
+    print(i)
+else:
+     print("end of loop")
+
+
+
+Control statements:
+
+1. break
+ --> the break is used to exit from the loop.
+ eg:
+  any=[1,2,3,4,5]
+     for j in any:
+          print(j)
+          if j==3:
+            break
+     else:
+         print("entered")
+
+2. continue:
+  --> the continue will skip the current itteration.
+  
+  eg:
+    any=[1,2,3,4,5]
+     for j in any:
+          if j==3:
+           continue
+           print(j)
+     else:
+         print("entered")
+
+
+3. pass:
+--> space holder
+  eg:
+    any=[1,2,3,4,5]
+     for j in any:
+         pass
+
+4. range():
+--> range is a in built fuction that is used to generate a sequence unto a limit.
+sybtax --> range(start,end,step)
+
+
+all=[1,2,3,4]
+for i in range(20):
+    print(j)
+
+5. assert()
+--> it will used to check the condition , but it will raise an error icase it is false.
+ eg:
+   age=int(input())
+   assert agr>=18 ,"you must have 18 years" 
+
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+         
