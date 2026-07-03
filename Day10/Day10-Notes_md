@@ -1,0 +1,111 @@
+'''                                                                                   Day 10
+                                                                                      ___ __
+                                                                                   
+
+num=int(input("enter a number"))
+count=0
+for i in range(1,num+1):
+    if num%i==0:
+        count+=1
+if count==2:
+    print(f"{num} is a prime")
+else:
+    print(f"{num} is not a prime")
+
+
+limit=int(input("enter a number:"))
+for j in range(1,limit+1):
+    count=0
+    for i in range(1,j+1):
+        if j%i==0:
+            count+=1
+    if count==2:
+        print(f"{j} is a prime number")
+
+
+num=int(input())
+for i in range(0,num+1):
+    print("* "*(i+1))
+
+
+
+num=int(input("enter a number:"))
+for i in range(1,num+1):
+    for j in range(1,i+1):
+        print("*",end=" ")
+    print()        
+
+
+num=int(input("enter a number:"))
+for i in range(1,num+1):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print()
+
+
+num=int(input("enter a number:"))
+for i in range(1,num+1):
+    for j in range(1,i+1):
+        print(i,end=" ")
+    print()
+    
+num=int(input("enter a number:"))
+count=0
+for i in range(1,num+1):
+    for j in range(1,i+1):
+        count+=1
+        print(count,end=" ")
+    print()
+
+num=int(input())
+b=num
+count=0
+while num>0:
+    digit=num%10
+    count+=digit**3
+    num=num//10
+if count==b:
+    print("it is a armstrong number")
+else:
+    print("it is not a armstrong")
+    
+
+armst=int(input("enter a number"))
+lenth=len(str(armst))
+all=0
+for j in str(armst):
+    all+=int(j)**lenth
+if all==armst:
+    print(f"{armst} is armstrong")
+else:
+    print(f"{armst} is not")
+
+   
+num=10
+for i in range(num):
+    print(" " * (num-i-1),end=" ")
+    print("*"*(2*i+1))
+
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
