@@ -1,0 +1,116 @@
+'''
+                                                                           Day 12
+                                                                           ___ __
+
+Functions
+_________
+
+--> function is a block of code that can be reusable .
+--> function can avoid the repeated line of code.
+
+Funtions are two types:
+
+1. built in
+___________
+
+eg: print(),max(),type(),min(),sum()
+
+2.user define
+_____________
+
+--> this function starts with the keyword "def"
+syntax--> def func_name(parameters):
+               --------
+               ---------
+               -----------
+          func_name(arguments)
+
+eg:
+ def add():
+     print("hello!")
+ add()
+
+types of arguments
+_____ __ _________
+
+1. requared arguments:
+  --> we have to pass same number of arguments with definition of the function.
+  eg:
+   def add(a,b):
+       print(a)    to not use like this
+   add(4)
+   
+2. default:
+  -->
+  eg:
+   def add(a,b):
+        print(a)
+   add(a=5,b=6)
+
+ eg2:
+  num=5
+  num1=6
+  num2=7
+  def add(a,b,c):
+      print(a)
+      print(b)
+      print(c)
+  add (num,num1,num2)
+
+
+3. keyword:
+  --> we can pass as a pair like (variable=datatype)
+
+4. variable length
+  --> can pass n munber of arguments and just use args in the paramenters , will
+  recieve tuple of arguments.
+
+  eg:
+  num=5
+  num1=6
+  num2=7
+  num3="python"
+  def add(*a):
+      print(a)
+  add (num,num1,num2,num3)
+
+  eg:
+   def add(**a):
+      print(a['age'])
+    add(name="bharat",age=21)
+
+global variable:
+--> this global variable can be used through out the function and also outside the function too.
+
+ eg:
+  num=9
+  def func():
+      print(num)
+  func()
+
+local variable:
+--> if can be used within the function only it cannot be used in the outside the function.
+eg:
+ def func():
+      num=9
+      print(num)
+  func()
+  print(num)
+
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
