@@ -1,0 +1,134 @@
+'''
+                                                                                               Day 14
+                                                                                               ___ __
+
+Lambda function
+______ ________
+
+--> this is also called as annonymous function.
+
+--> a lambda function can take n number of arguments nut having only
+    one expression.
+
+syntax: lambda arguments : expression
+
+
+eg:
+
+some = lambda an : an+5
+print(some(10))
+
+eg:
+some=lambda an,so,why:an+so+why
+print(some(10,8,90))
+
+filter()
+________
+
+--> the filter() function is a built in function used to filter elements
+    from an itterables such as list,tuple and set based on condition.
+
+syntax: filter(function,itterable)
+
+--> this filter() function returns filter object so we can convert that into list ,
+    set and tuple.
+
+eg:
+
+num=[1,2,3,4,5]
+rev=filter(lambda a:a%2==0,num)
+print(tuple(rev))
+
+eg:
+num=[1,2,3,4,5]
+rev=filter(lambda a:a%2!=0,num)
+print(tuple(rev))
+
+list comprehension:
+____ _____________
+
+--> this offers a shorter syntax when we want to create a new list from the old list.
+
+syntax--> variable_name=[expression loop condition]
+
+eg:
+    with out cond
+old=[1,2,3,4,5,6]
+new=[j for j in old]
+print(new)
+
+eg:
+
+with condition
+old=[1,2,3,4,5,6]
+new=[j for j in old if j%2==0 ]
+print(new)
+
+Dictionary comprehension
+__________ _____________
+
+--> this offers a shorter syntax when we want to create a new dict from the old dict.
+
+syntax: var_name=[expression loop]
+eg:
+
+old={1:2,3:4,5:6}
+new={i:j for (i,j) in old.items() }
+print(new)
+
+eg:
+
+old={1:2,3:4,5:6}
+new={i:j for (i,j) in old.items()if j%2==0 }
+print(new)
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
