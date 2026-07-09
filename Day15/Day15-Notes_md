@@ -1,0 +1,56 @@
+'''
+                                                                                                Day 15
+                                                                                                ___ __
+
+
+num=[23,4,6,23,7,4]
+empty=[]
+def removes(num,empty):
+    for i in num:
+        if i not in empty:
+            empty.append(i)
+    print(empty)
+removes(num,empty)
+ 
+num=8
+count=0
+def prime_not(num,count):
+    for j in range(1,num+1):
+            if num%j==0:
+                count+=1
+    if count==2:
+        print(" prime number")
+                
+    else:
+        print("not a prime")
+prime_not(num,count)
+
+some="python is a  programming language"
+count=0
+def counting(some,count):
+    so=some.split(' ')
+    for j in so:
+        count+=1
+    print(count)
+counting(some,count)
+
+some="Python Is A  Programming Language"
+cap_count=0
+small_count=0
+space_count=0
+def cap_small(some,cap_count,small_count,space_count):
+    for i in some:
+        if i.isupper():
+            cap_count+=1
+        elif i.islower():
+            small_count+=1
+
+        else:
+            space_count+=1
+    print(f" the total capitals are{cap_count}")
+    print(f" the total lowers are{small_count}")
+    print(f" the total spaces are{space_count}")
+
+
+cap_small(some,cap_count,small_count,space_count)
+'''
