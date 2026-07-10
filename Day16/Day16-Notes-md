@@ -1,0 +1,183 @@
+'''
+                                                                                                Day 16
+                                                                                                ___ __
+
+
+Generators
+__________
+
+--> this generator is special function that returns the iterator.
+    instead of returning all the valus at once...
+
+--> here we are going to use yield keyword
+
+eg :
+def some():
+    yield 1
+    yield 2
+    yield 3
+so=some()
+print(next(so))
+print(next(so))
+print(next(so))
+
+working a generator
+_______ _ _________
+
+--> it does not execute the function immediately. .
+--> it will returns the generator object.
+--> then the function will pauses at each yield.
+--> when the next() is called again , execution resumes from where it stopped .
+
+
+def demo():
+    print("start")
+    yield 1
+
+    print("middle")
+    yield 2
+
+    print("end")
+    yield 3
+how=demo()
+print(next(how))
+
+with generator
+_____ ________
+
+eg:
+
+def how(so):
+    for i in range (so):
+       yield i*i
+any=how(5)
+print(next(any))
+
+
+without generator
+_______ _________
+
+eg:
+ 
+def sqt(so):
+    for i in range(so):
+         print(i*i)
+sqt(5)
+
+function
+________
+
+--> return
+--> return complete result.
+--> function will end after the return the value.
+--> more memory usage.
+--> this function never resume.
+
+generator
+_________
+
+--> yield
+--> return one value every yield.
+--> pauses after every yield.
+--> less memory usage.
+--> resume after next().
+
+yield keyword
+_____ _______
+
+--> this will produce the value..
+--> but the yield pauses the funtion.
+--> and yield will save the function current state.
+--> yiels will continues where it stopped.
+
+
+
+next() keyword
+_____ ________
+
+--> the next() function is used to retrive the next value from a generator.
+
+StopIteration
+_____________
+
+--> calling next() function after all values retrive then it will raise the
+StopIteration exception.
+
+eg:
+def how(so):
+    for i in range (so):
+       yield i*i
+any=how(5)
+print(next(any))
+print(next(any))
+print(next(any))
+print(next(any))
+print(next(any))
+print(next(any))
+
+
+def num(a):
+    for i in range(a,0,-2):
+        yield i
+
+any=num(10)
+print(next(any))
+print(next(any))
+
+genrator expression
+________ __________
+
+--> the generator expression is similar to a list comprehension but uses paranthesis but uses
+    paranthesis () instead of [].
+
+
+gen=(x*x for x in range (5))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
