@@ -1,0 +1,26 @@
+'''
+SMTP module
+
+email.message
+mwwa brmj uher frrb
+'''
+import smtplib
+import ssl
+from email.message import EmailMessage
+sender_email="rbharatreddy311@gmail.com"
+password="zlbjvckmatjqnxtk"
+
+reciever_email="ksankar8096@gmail.com"
+message=EmailMessage()
+message["from"]=sender_email
+message["to"]=reciever_email
+message["subject"]="Welcome Mail"
+message.set_content("Welcome to the codegnan")
+
+context=ssl.create_default_context()
+with smtplib.SMTP("smtp.gmail.com",port=587) as smtp:
+    smtp.ehlo()
+    smtp.starttls(context=context)
+    smtp.ehlo()
+    smtp.login(sender_email,password)
+    smtp.send_message(message)
