@@ -1,0 +1,195 @@
+'''
+                                                                                                Day 22
+                                                                                                ___ __
+
+
+Inhritance
+__________
+                                                                                                
+inheritance is an oop concept where one class(child/derived)acquired
+the properties and methods of another class (parent/base)
+
+class parent:
+    pass
+class child(parent):
+    pass
+
+1.single inheritance
+------------
+a child class inherits from one parent is single inheritance
+eg:-
+class animal:
+    def sound(self):
+        print('animal make sounds')
+class dog(animal):
+    def barks(self):
+        print("dog braks")
+        
+d=dog()
+d.sound()
+d.bark()
+eg:-
+class father:
+    def land(self):
+        print('5 ar of land')
+class son(father):
+    def flat(self):
+        print('3BHK flat')
+s=son()
+s.land()
+s.flat()
+
+Multiple inheritance
+________ ___________
+
+a class inherits more than onw parent .
+
+
+class father:
+    def skills(self):
+        print("driving")
+class mother:
+    def talent(self):
+        print("cooking")
+class sister:
+    def learn(self):
+        print("python")
+class son(father,mother,sister):
+    def mine(self):
+        print("coding")
+
+all_=son
+all_.skills()
+all_.talent()
+all_.learn()
+all_.mine()
+
+Multi-level
+___________
+
+one child class becomes the parent for another class
+
+class grandfather:
+    def house(self):
+        print("owns house")
+class father(grandfather):
+    def flat(self):
+        print("new 3bhk flat")
+class son(father):
+    def car(self):
+        print("have a car")
+fam=son()
+fam.house()
+fam.flat
+
+hierarchical
+____________
+
+--> multiple childs inherits from the same parent .
+
+
+class mother:
+    def gold(self):
+        print('10 kg gold')
+class pinky(mother):
+    def show(self):
+        print('will get 5 kg gold')
+class yuktha(mother):
+    def show_2(self):
+        print('will get remaining 5 kg gold')
+child_1=pinky()
+child_2=yuktha()
+child_1.gold()
+child_1.show()
+child_2.gold()
+child_2.show_2()
+
+
+
+class father:
+    def land(self):
+        print('6 acers of land')
+class child_1(father):
+    def show(self):
+        print('got 2 acres of land')
+class child_2(father):
+    def show_1(self):
+        print('gets 2 acres of land')
+class child_3(father):
+    def show_2(self):
+        print('gets remaining 2 acres of land')
+la=child_1()
+lan=child_2()
+rem=child_3()
+
+la.land()
+la.show()
+
+lan.land()
+lan.show_1()
+
+rem.land()
+rem.show_2()
+
+hybrid inheritance
+______ ___________
+
+--> this is the combination of two or more types of inheritance example of multiple + multi-level.
+
+
+
+class A:
+    def methodA(self):
+        print('class A')
+class B(A):
+    def methodB(self):
+        print('class B')
+class C(A):
+    def methodC(self):
+        print('class C')
+class D(B,C):
+    def methodD(self):
+        print('class D')
+so=D()
+so.methodA()
+so.methodB()
+so.methodC()
+
+super()
+_______
+
+--> this super() function is used to access the parent class methods or constructor in the child class..
+
+
+class parent:
+    def show(self):
+        print('parent method')
+class child(parent):
+    def show(self):
+        super().show()
+        print('child class')
+chi_=child()
+chi_.show()
+
+
+
+class person:
+    def __init__(self,name):
+        self.name=name
+class student(person):
+    def __init__(self,name,roll):
+        super().__init__(name)
+        self.roll=roll
+    def display(self):
+        print(self.name)
+        print(self.roll)
+an=student('teja',101)
+an.display()
+
+
+
+
+
+
+
+'''
